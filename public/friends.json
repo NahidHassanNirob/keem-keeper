@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ariful Islam",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&fit=crop",
+    "email": "ariful.cst@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "tech enthusiast"],
+    "bio": "Coding partner from Polytechnic days. Loves exploring new JS frameworks.",
+    "goal": 14,
+    "next_due_date": "Apr 10, 2026"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&fit=crop",
+    "email": "sarah.design@yahoo.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["work", "ui/ux"],
+    "bio": "Colleague at the last internship. Expert in Figma and minimalist designs.",
+    "goal": 7,
+    "next_due_date": "Apr 22, 2026"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Rahman",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&fit=crop",
+    "email": "tanvir.r@hotmail.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["childhood", "gaming"],
+    "bio": "Best friend since primary school. We usually play E-football every weekend.",
+    "goal": 7,
+    "next_due_date": "Apr 15, 2026"
+  },
+  {
+    "id": 4,
+    "name": "Nusrat Jahan",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&fit=crop",
+    "email": "nusrat.j@outlook.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["university", "traveller"],
+    "bio": "Met during the university hiking trip. She always has the best travel stories.",
+    "goal": 21,
+    "next_due_date": "Mar 28, 2026"
+  },
+  {
+    "id": 5,
+    "name": "Rakib Hossain",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&fit=crop",
+    "email": "rakib.dev@gmail.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["mentorship", "backend"],
+    "bio": "Senior developer who guided me through the MERN stack journey.",
+    "goal": 30,
+    "next_due_date": "May 05, 2026"
+  },
+  {
+    "id": 6,
+    "name": "Mehedi Hasan",
+    "picture": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&fit=crop",
+    "email": "mehedi.hostel@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["hostel mate", "photography"],
+    "bio": "Roommate from Tangail Polytechnic. We shared many late-night study sessions.",
+    "goal": 14,
+    "next_due_date": "Apr 18, 2026"
+  },
+  {
+    "id": 7,
+    "name": "Ayesha Siddiqua",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&fit=crop",
+    "email": "ayesha.s@gmail.com",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["distant relative", "family"],
+    "bio": "Cousin living in Gazipur. Very supportive and loves traditional food.",
+    "goal": 30,
+    "next_due_date": "Mar 15, 2026"
+  },
+  {
+    "id": 8,
+    "name": "Siam Bakhtiar",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&fit=crop",
+    "email": "siam.football@yahoo.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["sports", "close friend"],
+    "bio": "Captain of our local football team. A true leader on and off the field.",
+    "goal": 10,
+    "next_due_date": "Apr 25, 2026"
+  },
+  {
+    "id": 9,
+    "name": "Farhana Karim",
+    "picture": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=200&h=200&fit=crop",
+    "email": "farhana.k@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["neighbour", "artist"],
+    "bio": "Incredible painter living next door. We often share books and coffee.",
+    "goal": 10,
+    "next_due_date": "Apr 14, 2026"
+  },
+  {
+    "id": 10,
+    "name": "Kamrul Hassan",
+    "picture": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200&h=200&fit=crop",
+    "email": "kamrul.it@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["cybersecurity", "old friend"],
+    "bio": "Interested in network security. We often discuss latest tech trends together.",
+    "goal": 15,
+    "next_due_date": "Apr 30, 2026"
+  }
+]
