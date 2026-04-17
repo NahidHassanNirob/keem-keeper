@@ -1,4 +1,5 @@
 import TimeLineCard from "@/components/shared/timeline/TimeLineCard";
+import Timeline from "@/components/timeline/Timeline";
 
 export const metadata = {
   title: "Keen Keeper | Timeline",
@@ -11,7 +12,9 @@ const TimeLinePage = () => {
       <h1 className="text-2xl text-left font-bold mb-2 text-[#434953]">
         Timeline
       </h1>
-
+      <Timeline>
+        
+      </Timeline>
       <div className="">
         <TimeLineCard></TimeLineCard>
       </div>

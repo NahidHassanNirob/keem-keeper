@@ -6,7 +6,7 @@ import { MdOutlineMessage, MdWifiCalling3 } from "react-icons/md";
 import { toast } from "react-toastify";
 
 const ClickBtn = ({ Data }) => {
-  const {timeLine,setTimeLine} = useContext(FriendsContext);
+  const {timeLine,setTimeLine,setAllTimeLine} = useContext(FriendsContext);
   const handelTimeLine = (type, data) => {
     const info = {
       type,
@@ -18,7 +18,9 @@ const ClickBtn = ({ Data }) => {
       }),
     };
     setTimeLine([...timeLine,info])
-    console.log(timeLine);
+    setAllTimeLine([...timeLine,info])
+    
+   
    toast.success(`${type} with  ${Data.name}!`,{theme:"dark"})
   };
 
