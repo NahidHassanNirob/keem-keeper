@@ -22,8 +22,8 @@ const BannerCard = () => {
         <p>On Track</p>
       </div>
       <div className="text-center p-5  shadow bg-white rounded-md">
-        <h2 className="text-[#244D3F] text-xl font-bold">10</h2>
-        <p>Total Friends</p>
+        <h2 className="text-[#244D3F] text-xl font-bold">6</h2>
+        <p>Need Attention</p>
       </div>
       <div className="text-center p-5  shadow bg-white rounded-md">
         <h2 className="text-[#244D3F] text-xl font-bold">{timeLine.length}</h2>

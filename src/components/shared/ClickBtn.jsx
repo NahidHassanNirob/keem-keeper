@@ -3,6 +3,7 @@ import { FriendsContext } from "@/context/friendsContext";
 import React, { useContext } from "react";
 import { FaVideo } from "react-icons/fa";
 import { MdOutlineMessage, MdWifiCalling3 } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const ClickBtn = ({ Data }) => {
   const {timeLine,setTimeLine} = useContext(FriendsContext);
@@ -18,30 +19,30 @@ const ClickBtn = ({ Data }) => {
     };
     setTimeLine([...timeLine,info])
     console.log(timeLine);
-
+   toast.success(`${type} with  ${Data.name}!`,{theme:"dark"})
   };
 
   return (
     <div className="grid sm:grid-cols-3 gap-4 font-bold ">
       <div
         onClick={() => handelTimeLine("call", Data)}
-        className="flex  flex-col items-center justify-center space-y-1 p-2 bg-[#F3F5F7]  rounded-md shadow"
+        className="flex  cursor-pointer hover:bg-[#244D3F] hover:text-white flex-col items-center justify-center space-y-1 p-2 bg-[#F3F5F7]  rounded-md shadow"
       >
-        <MdWifiCalling3 className="text-2xl text-[#434953]" />
+        <MdWifiCalling3 className="text-2xl  hover:text-white" />
         <h2 className="font-semibold text-lg">Call</h2>
       </div>
       <div
         onClick={() => handelTimeLine("text", Data)}
-        className="flex flex-col items-center justify-center space-y-1  p-2 bg-[#F3F5F7]  rounded-md shadow"
+        className="flex cursor-pointer hover:bg-[#244D3F] hover:text-white flex-col items-center justify-center space-y-1  p-2 bg-[#F3F5F7]  rounded-md shadow"
       >
-        <MdOutlineMessage className="text-2xl text-[#434953]" />
+        <MdOutlineMessage className="text-2xl  hover:text-white" />
         <h2 className="font-semibold text-lg">text</h2>
       </div>
       <div
         onClick={() => handelTimeLine("video", Data)}
-        className="flex  flex-col items-center justify-center space-y-1 p-2 bg-[#F3F5F7]  rounded-md shadow"
+        className="flex cursor-pointer hover:bg-[#244D3F] hover:text-white  flex-col items-center justify-center space-y-1 p-2 bg-[#F3F5F7]  rounded-md shadow"
       >
-        <FaVideo className="text-2xl text-[#434953]" />
+        <FaVideo className="text-2xl  hover:text-white" />
         <h2 className="font-semibold text-lg">video</h2>
       </div>
     </div>

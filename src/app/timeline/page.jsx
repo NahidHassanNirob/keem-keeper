@@ -1,19 +1,22 @@
-"use client";
 import TimeLineCard from "@/components/shared/timeline/TimeLineCard";
-import { FriendsContext } from "@/context/friendsContext";
-import React, { useContext } from "react";
 
+export const metadata = {
+  title: "Keen Keeper | Timeline",
+  description:
+    "Keep track of every call, text, and video chat in one organized timeline.",
+};
 const TimeLinePage = () => {
-  const { timeLine } = useContext(FriendsContext);
-
   return (
     <div className="container  mx-auto  px-3  my-5">
-      <h1 className="text-2xl text-left font-bold mb-5 text-[#434953]">Timeline</h1>
-      
+      <h1 className="text-2xl text-left font-bold mb-2 text-[#434953]">
+        Timeline
+      </h1>
+
       <div className="">
-        {timeLine.map((single, ind) => (
+        {/* {timeLine.map((single, ind) => (
           <TimeLineCard single={single} key={ind}></TimeLineCard>
-        ))}
+        ))} */}
+        <TimeLineCard></TimeLineCard>
       </div>
     </div>
   );

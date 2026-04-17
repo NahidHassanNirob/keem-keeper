@@ -14,9 +14,9 @@ const MyLinks = ({name,path}) => {
 
     return (
        
-            <Link className={`mx-2 flex gap-1
+            <Link className={`mx-2 flex gap-1 
             ${
-                activePath===path? 'bg-[#244D3F] text-white btn' :''
+                activePath===path? 'border-b border-blue-600 text-blue-600 ' :'text-gray-500'
             }
              items-center font-semibold`}  href={path}>
               
