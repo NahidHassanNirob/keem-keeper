@@ -7,7 +7,7 @@ import { MdWifiCalling3, MdOutlineMessage } from "react-icons/md";
 
 const TimeLineCard = () => {
   const { timeLine } = useContext(FriendsContext);
- console.log(timeLine);
+
   return (
     <div>
       {timeLine.length===0? <div className="flex flex-col items-center justify-center min-h-[75vh] text-center px-4">

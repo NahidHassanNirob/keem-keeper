@@ -1,10 +1,9 @@
 "use client";
 import React, { useContext } from "react";
-// ১. Tooltip ইম্পোর্ট করুন এবং Cell ইম্পোর্টটি ঠিক করুন
-import { PieChart, Pie, ResponsiveContainer, Legend, Tooltip, Cell } from "recharts";
+import { PieChart, Pie, ResponsiveContainer, Legend } from "recharts";
 import { FriendsContext } from "@/context/friendsContext";
+import { Cell } from "./../../../node_modules/recharts/es6/component/Cell";
 import Link from "next/link";
-
 const Stats = () => {
   const { timeLine } = useContext(FriendsContext);
 
@@ -24,60 +23,58 @@ const Stats = () => {
   );
 
   const COLORS = ["#244D3F", "#8B5CF6", "#34A853"];
-
   return (
     <div className="container mx-auto px-3 my-5">
       <h1 className="lg:text-2xl text-left font-bold mb-2 text-[#434953]">
         Friendship Analytics
       </h1>
-      
       {timeLine.length === 0 ? (
-        <div className="flex flex-col items-center justify-center min-h-[75vh] text-center px-4 rounded-md">
+        <div className="flex  flex-col items-center justify-center min-h-[75vh] text-center px-4  rounded-md   ">
           <div className="text-5xl pb-3">📈</div>
-          <h2 className="text-2xl font-bold text-gray-800">Analytics Not Ready</h2>
+          <h2 className="text-2xl font-bold text-gray-800">
+            Analytics Not Ready
+          </h2>
           <p className="text-gray-500 mt-2 max-w-sm">
             We don't have enough data to generate your friendship insights yet.
             Keep in touch with your friends to unlock your stats!
           </p>
           <Link
-            href="/"
-            className="mt-6 px-6 py-2 bg-[#244D3F] text-white rounded-lg hover:bg-[#1a3a30] transition-colors"
-          >
-            Go to Home
-          </Link>
+        href="/" 
+        className="mt-6 px-6 py-2 bg-[#244D3F] text-white rounded-lg hover:bg-[#1a3a30] transition-colors"
+      >
+        Go to Home
+      </Link>
         </div>
       ) : (
-        <div className="h-[450px] w-full bg-white shadow rounded-md p-5">
-          <h2 className="font-semibold text-left text-[18px]">By Interaction Type</h2>
-          <ResponsiveContainer width="100%" height="100%">
-            <PieChart>
-              {/* ২. Tooltip এখানে যোগ করা হয়েছে যা হোভার করলে ডেটা দেখাবে */}
-              <Tooltip 
-                contentStyle={{ borderRadius: "10px", border: "none", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
-              />
-              
-              <Pie
-                data={dataCount}
-                cx="50%"
-                cy="50%"
-                innerRadius={80}
-                outerRadius={120}
-                paddingAngle={8}
-                dataKey="value"
-              >
-                {dataCount.map((entry, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    fill={COLORS[index % COLORS.length]}
-                    stroke="none"
-                    style={{ outline: 'none' }} // হোভার করলে বর্ডার রিমুভ করবে
-                  />
-                ))}
-              </Pie>
-              <Legend verticalAlign="bottom" height={36} iconType="circle" />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
+        <>
+          <div className="h-[400px] w-[100%]  bg-white shadow rounded-md p-5">
+            <h2 className="font-semibold text-left text-[18px]">
+              By Interaction Type
+            </h2>
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={dataCount}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={80}
+                  outerRadius={120}
+                  paddingAngle={8}
+                  dataKey="value"
+                >
+                  {dataCount.map((entry, index) => (
+                    <Cell
+                      key={`cell-${index}`}
+                      fill={COLORS[index % COLORS.length]}
+                      stroke="none"
+                    />
+                  ))}
+                </Pie>
+                <Legend verticalAlign="bottom" height={36} iconType="circle" />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        </>
       )}
     </div>
   );

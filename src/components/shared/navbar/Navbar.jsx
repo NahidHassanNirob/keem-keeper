@@ -23,7 +23,13 @@ const Navbar = () => {
       <div className="navbar sha container mx-auto flex flex-col sm:flex-row  ">
       <div className="flex-1">
         <Link href={"/"}>
-          <Image src={logo} alt="navbar-logo" width={150} height={150}></Image>
+          <Image 
+  src={logo} 
+  alt="navbar-logo" 
+  width={150} 
+  height={150} 
+  style={{ height: 'auto', width: 'auto' }} // এটি এরর দূর করবে
+/>
         </Link>
       </div>
       <div className="flex-none">
