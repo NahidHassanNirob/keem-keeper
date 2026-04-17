@@ -7,7 +7,7 @@ const TimeLinePage = () => {
   const { timeLine } = useContext(FriendsContext);
 
   return (
-    <div className="max-w-7xl  mx-auto  px-4  my-5">
+    <div className="container  mx-auto  px-3  my-5">
       <h1 className="text-2xl text-left font-bold mb-5 text-[#434953]">Timeline</h1>
       
       <div className="">

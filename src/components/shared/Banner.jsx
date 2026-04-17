@@ -1,4 +1,5 @@
 import React from "react";
+import BannerCard from "./BannerCard";
 
 const Banner = () => {
   return (
@@ -15,26 +16,8 @@ const Banner = () => {
             + Add Friend
         </button>
       </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 my-5">
-        <div className="text-center p-5  shadow bg-white rounded-md">
-            <h2 className="text-[#244D3F] text-xl font-bold">10</h2>
-            <p>Total Friends</p>
-        </div>
-        <div className="text-center p-5  shadow bg-white rounded-md">
-            <h2 className="text-[#244D3F] text-xl font-bold">10</h2>
-            <p>Total Friends</p>
-        </div>
-        <div className="text-center p-5  shadow bg-white rounded-md">
-            <h2 className="text-[#244D3F] text-xl font-bold">10</h2>
-            <p>Total Friends</p>
-        </div>
-        <div className="text-center p-5  shadow bg-white rounded-md">
-            <h2 className="text-[#244D3F] text-xl font-bold">10</h2>
-            <p>Total Friends</p>
-        </div>
-        
-      </div>
+<BannerCard></BannerCard>
+     
     </div>
   );
 };
